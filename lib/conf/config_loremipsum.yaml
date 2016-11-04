@@ -1,0 +1,7 @@
+baseHref: /
+photoService: lorem
+contentService: lorem
+contentUrlPrefix: http://loripsum.net/api/10/short/headers/link/bq/ol/
+attributeAllPhotos: true
+locationStrategy: path
+analyticsId: UA-XXXXXXXX-X

@@ -1,0 +1,45 @@
+sh-about, sh-ask {
+    min-width: 100%;
+}
+
+h1, h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {
+    margin-left: 3em;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+table {
+    margin-left: 3.5em;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+table th, table td {
+    border: 1px dotted #333;
+    padding: 0.5em;
+}
+
+table th:empty {
+    border: none;
+}
+
+p {
+    margin-left: 3em;
+    line-height: 20px;
+
+}
+
+

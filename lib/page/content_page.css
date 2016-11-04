@@ -1,0 +1,220 @@
+sh-content-page {
+    width: 100%;
+    max-width: 1600px;
+}
+
+sh-drawer-subnav {
+    background: white;
+    min-width: 200px;
+}
+
+.section-container {
+    opacity: 1.0;
+    -webkit-transition: opacity 800ms ease-in-out;
+    -moz-transition: opacity 800ms ease-in-out;
+    -o-transition: opacity 800ms ease-in-out;
+    transition: opacity 800ms ease-in-out;
+}
+
+.section-container.is-loading {
+    opacity: 0.0;
+}
+
+@media (max-width: 839px) {
+    sh-drawer-subnav {
+        width: 100%;
+    }
+}
+
+h1, h2 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+h3, h4, h5, h6 {
+    margin-left: 3em;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+table {
+    margin-left: 3.5em;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+iframe.google-map {
+    margin: 0.5em 0 1.0em 3.5em;
+    border: 4px solid white;
+    width: calc(100% - 3.5em);
+}
+
+table th, table td {
+    border: 1px dotted #333;
+    padding: 0.5em;
+}
+
+table th:empty {
+    border: none;
+}
+
+p {
+    margin-left: 3em;
+    line-height: 20px;
+    text-align: justify;
+}
+
+p.callout {
+    line-height: 20px;
+    font-size: 14px;
+    font-style: italic;
+    position: relative;
+    font-weight: 300;
+    text-align: left;
+
+    padding: 1em;
+    width: 25%;
+    float: right;
+    clear: right;
+    margin-left: 0;
+    margin-bottom: .5em;
+    margin-right: -30%;
+
+    background: #ccc;
+    color: white;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.24);
+    border: none;
+    overflow: visible;
+
+}
+
+p.callout a {
+    color: white;
+    font-weight: 300;
+}
+
+p.callout::before {
+    content: '\e626';
+    font-family: "Material Icons";
+    position: absolute;
+    width: 48px;
+    text-align: center;
+    padding-top: 0;
+    z-index: 2;
+    font-weight: 800;
+    font-style: normal;
+    color: white;
+    top: inherit;
+    bottom: 15px;
+    right: -2px;
+    opacity: .3;
+    transform: rotate(25deg);
+    font-size: 60px;
+}
+
+p.callout.tip {
+    background: #0072ce;
+
+}
+
+p.callout.tip::before {
+    content: '\e88e';
+    color: white;
+}
+
+p.callout.alert {
+    background: #212121;
+}
+
+p.callout.alert::before {
+    content: '\e626';
+    color: white;
+}
+
+@media (max-width: 1539px) {
+
+    p.callout {
+        width: 50%;
+        margin-left: 1em;
+        margin-right: -12%;
+    }
+
+    p.callout::before {
+        content: '\e626';
+        font-family: "Material Icons";
+        position: absolute;
+        font-size: 36px;
+        top: 2px;
+        width: 48px;
+        right: -50px;
+        text-align: center;
+        padding-top: 0;
+        z-index: 2;
+        opacity: 1.0;
+        font-weight: 800;
+        font-style: normal;
+        transform: rotate(0deg);
+    }
+
+    p.callout.tip::before {
+        color: #0072ce;
+    }
+
+    p.callout.alert::before {
+        /*color: #ff9400;*/
+        color: #212121;
+    }
+
+}
+
+@media (max-width: 880px) {
+    p.callout {
+        width: initial;
+        float: none;
+        margin-right: 0;
+        margin-bottom: .75em;
+        margin-left: 3em;
+    }
+
+    p.callout::before {
+        /*display: none;*/
+        color: white !important;
+        top: inherit;
+        bottom: 15px;
+        right: -2px;
+        opacity: .3;
+    }
+
+}
+
+@media (max-width: 479px) {
+    p {
+        margin-left: .3em;
+    }
+
+    p.callout {
+        margin-left: 0;
+    }
+
+    iframe.google-map {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    table {
+        margin-left: 0;
+        display: block;
+        overflow-x: scroll;
+    }
+}
+
+

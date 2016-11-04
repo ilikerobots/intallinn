@@ -1,0 +1,30 @@
+:host {
+    width: 100%;
+    display: flex;
+}
+
+.background {
+    display: flex;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+.background span{
+    position: absolute;
+    font-size: 8vh;
+    line-height: 8vh;
+    text-align: center;
+    color: white;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    background: rgba(0,0,0,.4);
+}
+

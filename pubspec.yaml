@@ -1,0 +1,34 @@
+name: in_tallinn
+description: Local travel tips for visitors to Tallinn Estonia
+version: 0.0.1
+publish_to: none
+environment:
+  sdk: '>=1.20.0 <2.0.0'
+dependencies:
+  angular2: ^2.2.0
+  browser: ^0.10.0
+  http: ^0.11.0
+  lorem: 
+  logging:
+  console_log_handler:
+  stream_transformers: ^0.3.0
+  dart_to_js_script_rewriter: ^1.0.1
+  angular2_title_by_route_service: 
+  fnx_config: ^1.0.0
+  google_maps: ">=3.2.0"
+  usage: ">=2.2.2"
+  dartins: ">=0.1.2"
+transformers:
+- angular2:
+    platform_directives:
+    - 'package:angular2/common.dart#COMMON_DIRECTIVES'
+    platform_pipes:
+    - 'package:angular2/common.dart#COMMON_PIPES'
+    - 'package:in_tallinn/pipe/common_pipes.dart#commonPipes'
+    entry_points: web/main.dart
+    resolved_identifiers:
+            BrowserClient: 'package:http/browser_client.dart'
+            Client: 'package:http/http.dart'
+- fnx_config
+- dart_to_js_script_rewriter
+

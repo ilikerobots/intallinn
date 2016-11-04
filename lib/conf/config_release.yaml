@@ -1,0 +1,8 @@
+baseHref: /
+photoService: client
+contentService: client
+contentUrlPrefix: https://intallinn.ee/content/content/
+photoUrlPrefix: https://intallinn.ee/content/content/
+attributeAllPhotos: true
+locationStrategy: path
+analyticsId: UA-91221394-3

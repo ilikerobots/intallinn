@@ -1,0 +1,17 @@
+<div class="mdl-grid mdl-grid--no-spacing">
+  <sh-drawer-subnav [sections]="sections" class="mdl-components__nav mdl-cell--stretch mdl-shadow--4dp">
+  </sh-drawer-subnav>
+  <div class="mdl-cell mdl-cell--9-col mdl-cell--12-col-tablet">
+    <div *ngFor="let section of sections"
+         class="section-container mdl-cell mdl-cell--10-col-desktop mdl-cell--1-offset-desktop mdl-cell--12-col-phone mdl-cell--12-col-tablet"
+         [class.is-loading]="contents[section.id] == null">
+      <sh-titlecard id="{{section.id}}-target" bgColor="#0072ce" [photoId]="section.photoId">
+        {{section.title}}
+      </sh-titlecard>
+      <sh-article-section id="{{section.id}}-section">
+        <div [safeInnerHtml]="contents[section.id]"></div>
+      </sh-article-section>
+    </div>
+
+  </div>
+</div>

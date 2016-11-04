@@ -1,0 +1,65 @@
+<div *ngIf="loading" class="spinner">
+  <div class="mdl-spinner mdl-js-spinner is-active"></div>
+</div>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header page-{{currentPageClass | camelize }}">
+
+  <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top mdl-shadow--2dp">
+    <div id="main_panel" class="mdl-layout__header-row">
+      <div class="background"></div>
+      <span class="layout-title mdl-layout-title"><a [routerLink]="['Index']">inTallinn</a>
+      </span>
+
+      <div class="mdl-layout-spacer"></div>
+
+      <!-- Nav for large screens -->
+      <nav class="mdl-navigation nav-secondary mdl-layout--large-screen-only">
+        <a [routerLink]="['Ask Us']"><i class="material-icons md-24">question_answer</i></a> <a
+              [routerLink]="['About']"><i class="material-icons md-24">help_outline</i></a>
+      </nav>
+      <!-- Nav for small screens -->
+      <nav class="mdl-navigation nav-secondary mdl-layout--small-screen-only">
+        <a [routerLink]="['Ask Us']"><i class="material-icons md-24">question_answer</i></a> <a
+              [routerLink]="['About']"><i class="material-icons md-24">help_outline</i></a>
+      </nav>
+
+    </div>
+
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+      <a *ngFor="let nav of links" class="mdl-layout__tab" id="nav-{{nav.title}}" [routerLink]="[nav.title]">{{nav.title}}</a>
+      <div class="spacer"></div>
+    </div>
+
+  </header>
+
+  <main class="mdl-layout__content mdl-color-text--grey-600" (scroll)="scrollEvent()">
+    <div class="content" id="content">
+      <router-outlet></router-outlet>
+    </div>
+    <footer class="text-styling mdl-mini-footer mdl-color--grey-900">
+      <ul class="links-primary">
+        <li>
+          <a href="https://twitter.com/inTallinnEE" target="_system"><i
+                  class="icon icon-twitter-squared md-24 md-grey"></i></a>
+        </li>
+        <li>
+          <a href="https://play.google.com/store/apps/details?id=com.starheightmedia.intallinn" target="_system"><i
+                  class="icon icon-android md-24 md-grey"></i></a>
+        </li>
+          <!--<li class="">-->
+          <!--<a href="http://github.com"><i class="icon icon-github-squared md-24 md-grey"></i></a>-->
+          <!--</li>-->
+        <li>
+          <a [routerLink]="['About']"><i class="material-icons md-24 md-grey" style="vertical-align: sub">help</i></a>
+        </li>
+      </ul>
+    </footer>
+  </main>
+
+  <button id="scroll_up_fab" [class.is-visible]="isScrolled"
+          class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" (click)="scrollToTop()">
+    <i class="material-icons">keyboard_arrow_right</i>
+  </button>
+
+</div>
+

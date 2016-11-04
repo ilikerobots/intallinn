@@ -1,0 +1,19 @@
+<div class="mdl-shadow--2dp">
+  <div class="card-image mdl-card"
+       [style.background-color]="bgColor"
+       [style.background-image]="bgImageUrl">
+    <div class="mdl-card--expand">
+      <span *ngIf='showAttribution' class="photo-credit">
+        <span *ngIf="photo.attribution.url == null">
+        {{photo.attribution.attributionText}}
+        </span>
+        <a *ngIf="photo.attribution.url != null" href="{{photo.attribution.url}}" target="_system">
+        {{photo.attribution.attributionText}}
+        </a>
+      </span>
+    </div>
+    <div class="mdl-card__actions">
+      <span class="card-image__filename"> <ng-content></ng-content></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<aside class="docs-text-styling container">
+
+  <a id="nav-{{section.id}}" *ngFor="let section of sections" (click)="scrollTo(section.id)">
+    <div class="item-wrapper">
+      <div class="icon">
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+          <i class="material-icons md-24">{{section.icon}}</i>
+        </button>
+      </div>
+      <div class="text z-absolute-center">{{section.title}}</div>
+    </div>
+  </a>
+
+</aside>
+
+

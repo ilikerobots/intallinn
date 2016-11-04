@@ -1,0 +1,8 @@
+baseHref: /
+photoService: client
+contentService: client
+contentUrlPrefix: http://localhost:8082/content/
+photoUrlPrefix: http://localhost:8082/content/
+attributeAllPhotos: true
+locationStrategy: path
+analyticsId: UA-XXXXXXXX-X

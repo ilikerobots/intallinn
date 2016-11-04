@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description"
+        content="Experience Tallinn, Estonia like a local and get the most out of your visit.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>inTallinn</title>
+
+  <!-- Add to homescreen -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Fallback to homescreen for Chrome <39 on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="inTallinn">
+  <link rel="icon" sizes="192x192" href="images/intallinn_android.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="inTallinn">
+  <link rel="apple-touch-icon" href="images/intallinn_android.png">
+  
+  <!-- TODO: Tile icon for Win8 (144x144 + tile color) -->
+  <!-- <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png"> -->
+  <!-- <meta name="msapplication-TileColor" content="#3372DF"> -->
+
+  <meta name="theme-color" content="#0072ce">
+
+  <link rel="shortcut icon" href="images/icons/icon-192x192.png">
+
+  <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+  <!--
+  <link rel="canonical" href="http://www.example.com/">
+  -->
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Quicksand|Alegreya+Sans+SC:100" type="text/css">
+  <link rel="stylesheet" href="lib/fontello-brandicons/css/brandicons.css" type="text/css">
+  <link rel="stylesheet" href="lib/mdl/material.min.css">
+
+ <!-- cordova - uncommented by app build process
+ <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  cordova -->
+
+  <script src="https://maps.google.com/maps/api/js?libraries=geometry&key=AIzaSyCT_ZIFLF_Ef91JxD9Mzg6yRauXQCXa9Os"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <script defer src="lib/mdl/material.min.js"></script>
+  <script defer src="main.dart" type="application/dart"></script>
+  <script type="pub/fnx_config"></script>
+</head>
+<body>
+<my-app>
+  <div class="initial-load-spinner-container">
+    <div class="initial-load-spinner">
+      <span class="message">loading</span>
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+</my-app>
+</body>
+</html>

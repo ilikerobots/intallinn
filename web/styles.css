@@ -1,0 +1,120 @@
+body {
+    background-color: #212121;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+a {
+    color: #0072ce;
+}
+
+/* Rules for sizing the icon. */
+.md-18 {
+    font-size: 18px;
+}
+
+.md-24 {
+    font-size: 24px;
+}
+
+.md-36 {
+    font-size: 36px;
+}
+
+.md-48 {
+    font-size: 48px;
+}
+
+/* Rules for using icons as black on a light background. */
+.md-dark {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.md-dark.md-inactive {
+    color: rgba(0, 0, 0, 0.26);
+}
+
+/* Rules for using icons as white on a dark background. */
+.md-light {
+    color: rgba(255, 255, 255, 1);
+}
+
+.md-light.md-inactive {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.md-grey {
+    color: rgba(158, 158, 158, 1);
+}
+
+.md-grey.md-inactive {
+    color: rgba(158, 158, 158, 0.3);
+}
+
+.initial-load-spinner-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #222;
+}
+
+.initial-load-spinner-container .message {
+    display: block;
+    width: 80px;
+    color: #dadada;
+    margin-top: 60px;
+    margin-left: -20px;
+    text-align: center;
+}
+
+.initial-load-spinner {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    margin: auto;
+}
+
+.double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #0072ce;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%, 100% {
+        -webkit-transform: scale(0.0)
+    }
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+    0%, 100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+

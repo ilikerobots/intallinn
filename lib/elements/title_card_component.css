@@ -1,0 +1,48 @@
+
+.card-image.mdl-card {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.card-image > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.6);
+    font-weight: 900;
+}
+
+.card-image {
+    margin-top: 2em;
+}
+
+.photo-credit {
+    color: #ccc;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: .75em;
+    height: 50px;
+    vertical-align: top;
+    max-width: 50%;
+    text-align: right;
+    font-style: italic;
+}
+
+.photo-credit a {
+    color: #ccc;
+    text-decoration: none;
+
+}
+
+.card-image__filename {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mdl-card__supporting-text {
+    background: white;
+    width: inherit;
+}

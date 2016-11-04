@@ -1,0 +1,7 @@
+baseHref: /
+photoService: placeholder
+contentService: placeholder
+contentUrlPrefix: 
+attributeAllPhotos: true
+locationStrategy: path
+analyticsId: UA-XXXXXXXX-X
