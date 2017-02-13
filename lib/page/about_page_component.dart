@@ -9,7 +9,7 @@ import 'package:in_tallinn/structure/content_entry.dart';
 
 @Component(
     selector: 'sh-about',
-    styleUrls: const <dynamic>['about_page.css'],
+    styleUrls: const <String>['about_page.css'],
     encapsulation: ViewEncapsulation.None, /* styling of innerHTML content */
     templateUrl: 'about_page.html',
     directives: const <dynamic>[

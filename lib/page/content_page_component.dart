@@ -14,7 +14,7 @@ import 'package:in_tallinn/structure/page_section.dart';
 
 @Component(
     selector: 'sh-content-page',
-    styleUrls: const <dynamic>['content_page.css'],
+    styleUrls: const <String>['content_page.css'],
     templateUrl: 'content_page.html',
     encapsulation: ViewEncapsulation.None, /* styling of innerHTML content */
     directives: const <dynamic>[

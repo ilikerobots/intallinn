@@ -8,7 +8,7 @@ import 'package:in_tallinn/service/photo/photo_service.dart';
 
 @Component(
     selector: 'my-dashboard',
-    styleUrls: const <dynamic>['index_page.css'],
+    styleUrls: const <String>['index_page.css'],
     templateUrl: 'index_page.html',
     directives: const <dynamic>[]
 )

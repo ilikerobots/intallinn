@@ -5,7 +5,7 @@ import 'package:in_tallinn/logger/logger_service.dart';
 
 @Component(
     selector: 'sh-drawer-subnav',
-    styleUrls: const <dynamic>['drawer_subnav_component.css'],
+    styleUrls: const <String>['drawer_subnav_component.css'],
     templateUrl: 'drawer_subnav_component.html')
 class DrawerSubnavComponent {
 

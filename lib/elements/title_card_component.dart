@@ -8,7 +8,7 @@ import 'package:in_tallinn/photo/photo_id.dart';
 
 @Component(
   selector: 'sh-titlecard',
-  styleUrls: const <dynamic>['title_card_component.css'],
+  styleUrls: const <String>['title_card_component.css'],
   templateUrl: 'title_card_component.html',
 )
 class TitleCardComponent implements OnInit {

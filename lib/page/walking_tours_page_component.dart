@@ -8,7 +8,7 @@ import 'package:google_maps/google_maps.dart';
 
 @Component(
     selector: 'sh-walking-tours-page',
-    styleUrls: const <dynamic>['walking_tours_page.css'],
+    styleUrls: const <String>['walking_tours_page.css'],
     templateUrl: 'walking_tours_page.html',
     directives: const <dynamic>[
     ],
