@@ -85,3 +85,4 @@ The apk can be executed with `ionic run android` or `ionic emulate android`.
 See my Medium.com blog posts that describe the development of the content asset providers used in this app:
  * [Developing Angular2 Dart Asset Services, Part 1](https://medium.com/@mike_99824/developing-angular2-dart-asset-services-part-1-a3dfda68f920#.fr4r286v5)
  * [Developing Angular2 Dart Asset Services, Part 2](https://medium.com/@mike_99824/developing-angular2-dart-asset-services-part-2-481336b36cf8#.hdt018j4l)
+ * [Developing Angular2 Dart Asset Services, Part 3](https://medium.com/@mike_99824/developing-angular2-dart-asset-services-part-3-5521953cad1f#.40hca9ikq)
