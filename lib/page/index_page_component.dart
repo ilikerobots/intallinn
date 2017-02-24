@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:angular2/core.dart';
 
-import 'package:in_tallinn/photo/photo.dart';
-import 'package:in_tallinn/photo/photo_id.dart';
+import 'package:in_tallinn_content/photo/photo.dart';
+import 'package:in_tallinn_content/photo/photo_id.dart';
 import 'package:in_tallinn/service/photo/photo_service.dart';
 
 

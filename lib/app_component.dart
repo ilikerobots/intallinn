@@ -1,5 +1,4 @@
 import 'dart:html' show Element, window;
-import 'dart:async';
 
 import 'package:angular2/angular2.dart';
 import 'package:angular2/core.dart';
@@ -7,13 +6,14 @@ import 'package:angular2/router.dart';
 import 'package:angular2_title_by_route_service/angular2_title_by_route_service.dart';
 import 'package:in_tallinn/page/fourohfour_page_component.dart';
 import 'package:in_tallinn/util/util.dart';
-import 'package:usage/usage.dart';
+import 'package:usage/usage_html.dart';
 
 import 'package:in_tallinn/page/index_page_component.dart';
 import 'package:in_tallinn/conf/app_config.dart';
 import 'package:in_tallinn/logger/logger_service.dart';
 import 'package:in_tallinn/structure/site_structure_service.dart';
-import 'package:in_tallinn/structure/page.dart';
+import 'package:in_tallinn/structure/page_component_resolver.dart';
+import 'package:in_tallinn_content/structure/page.dart';
 
 @Component(
     selector: 'my-app',
@@ -46,15 +46,14 @@ class AppComponent implements AfterContentInit, OnInit {
       SiteStructureService _siteStruct,
       @Optional() this._logService) {
     _titleService.nameStrategy = _setTitle;
-    links = SiteStructureService.pages.where((Page p) => p.includeInNav);
-    _router.config(_getRouteConfig(SiteStructureService.pages));
+    links = _siteStruct.pages.where((Page p) => p.includeInNav);
+    _router.config(_getRouteConfig(_siteStruct.pages));
 
-    _initAnalytics(_config.analyticsId).then((Analytics ga) {
-      _router.subscribe((String url) {
-        if (url.isEmpty)
-          url = "index";
-        ga.sendScreenView(url);
-      });
+    final Analytics ga = _initAnalytics(_config.analyticsId);
+    _router.subscribe((String url) {
+      if (url.isEmpty)
+        url = "index";
+      ga.sendScreenView(url);
     });
 
     final String loc = window.location.pathname.replaceFirst("\#\/", "");
@@ -78,7 +77,7 @@ class AppComponent implements AfterContentInit, OnInit {
         config.add(
             new Route(path: "/" + p.id,
                 name: p.title,
-                component: p.component,
+                component: PageComponentResolver.resolve(p),
                 data: <String, dynamic>{'id': p.id}..addAll(p.data)))
     );
     config.add(new Route(path: '/404',
@@ -141,8 +140,8 @@ class AppComponent implements AfterContentInit, OnInit {
     }
   }
 
-  Future<Analytics> _initAnalytics(String id) {
-    return Analytics.create(id, 'in_tallinn_web', '1.0');
+  Analytics _initAnalytics(String id) {
+    return new AnalyticsHtml(id, 'in_tallinn_web', '1.0');
   }
 
   @override

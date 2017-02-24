@@ -5,8 +5,8 @@ import 'package:http/http.dart';
 
 import 'package:in_tallinn/conf/app_config.dart';
 import 'package:in_tallinn/logger/logger_service.dart';
-import 'package:in_tallinn/structure/content_entry.dart';
 import 'package:in_tallinn/service/content/content_service.dart';
+import 'package:in_tallinn_content/structure/content_entry.dart';
 
 @Injectable()
 class ClientContentService implements ContentService {

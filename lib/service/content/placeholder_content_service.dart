@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:angular2/core.dart';
 import 'package:lorem/lorem.dart';
 
-import 'package:in_tallinn/structure/content_entry.dart';
+import 'package:in_tallinn_content/structure/content_entry.dart';
 import 'package:in_tallinn/service/content/content_service.dart';
 
 @Injectable()

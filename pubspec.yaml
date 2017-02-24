@@ -1,6 +1,6 @@
 name: in_tallinn
 description: Local travel tips for visitors to Tallinn Estonia
-version: 0.0.1
+version: 0.0.2
 publish_to: none
 environment:
   sdk: '>=1.20.0 <2.0.0'
@@ -16,8 +16,13 @@ dependencies:
   angular2_title_by_route_service: 
   fnx_config: ^1.0.0
   google_maps: ">=3.2.0"
-  usage: ">=2.2.2"
+  usage: ">=3.0.0"
   dartins: ">=0.1.2"
+  in_tallinn_content:
+      git:
+        url: git://github.com/ilikerobots/intallinn_content.git
+        ref: sterile
+     
 transformers:
 - angular2:
     platform_directives:

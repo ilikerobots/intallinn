@@ -6,7 +6,7 @@ import 'package:angular2/security.dart';
 import 'package:in_tallinn/logger/logger_service.dart';
 import 'package:in_tallinn/service/content/content_service.dart';
 import 'package:in_tallinn/service/content/content_click_handler_service.dart';
-import 'package:in_tallinn/structure/content_entry.dart';
+import 'package:in_tallinn_content/structure/content_entry.dart';
 
 
 @Component(

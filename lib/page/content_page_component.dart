@@ -2,7 +2,6 @@ import 'dart:html';
 import 'package:angular2/core.dart';
 import 'package:angular2/security.dart';
 import 'package:angular2/router.dart';
-import 'package:in_tallinn/structure/content_entry.dart';
 import 'package:in_tallinn/service/content/content_service.dart';
 import 'package:in_tallinn/service/content/content_click_handler_service.dart';
 import 'package:in_tallinn/elements/article_section_component.dart';
@@ -10,7 +9,8 @@ import 'package:in_tallinn/logger/logger_service.dart';
 import 'package:in_tallinn/structure/site_structure_service.dart';
 import 'package:in_tallinn/elements/drawer_subnav_component.dart';
 import 'package:in_tallinn/elements/title_card_component.dart';
-import 'package:in_tallinn/structure/page_section.dart';
+import 'package:in_tallinn_content/structure/page_section.dart';
+import 'package:in_tallinn_content/structure/content_entry.dart';
 
 @Component(
     selector: 'sh-content-page',
